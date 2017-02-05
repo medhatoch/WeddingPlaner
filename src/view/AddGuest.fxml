@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="347.0" prefWidth="521.0" styleClass="pane" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.AddGuestController">
+   <children>
+     
+      <TextField fx:id="guestFirstName" layoutX="310.0" layoutY="64.0" style="-fx-background-size: 4;" styleClass="textfield" stylesheets="@anchorPaneBackground.css" />
+      <TextField fx:id="guestLastName" layoutX="310.0" layoutY="110.0" styleClass="textfield" stylesheets="@anchorPaneBackground.css" />
+      <TextField fx:id="guestPhoneNumber" layoutX="310.0" layoutY="163.0" styleClass="textfield" stylesheets="@anchorPaneBackground.css" />
+      <Button layoutX="353.0" layoutY="224.0" mnemonicParsing="false" onAction="#save" prefHeight="26.0" prefWidth="106.0" style="-fx-background-color: ;" styleClass="button" stylesheets="@anchorPaneBackground.css" text="Submit" textFill="#fbfcf6">
+         <font>
+            <Font name="Century" size="14.0" />
+         </font>
+      </Button>
+      <Label layoutX="198.0" layoutY="68.0" text="First Name :" />
+      <Label fx:id="errorMsg" layoutX="189.0" layoutY="196.0" prefHeight="17.0" prefWidth="289.0" textAlignment="RIGHT" textFill="#f22222" />
+      <Label layoutX="198.0" layoutY="114.0" text="Last Name :" />
+      <Label layoutX="198.0" layoutY="167.0" text="N° Cell Phone :" />
+      <Button layoutX="149.0" layoutY="279.0" mnemonicParsing="false" onAction="#Home" prefHeight="26.0" prefWidth="99.0" styleClass="button" stylesheets="@anchorPaneBackground.css" text="Home" textFill="#fffffb">
+         <font>
+            <Font name="Century" size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="141.0" layoutY="314.0" mnemonicParsing="false" onAction="#addGift" prefHeight="26.0" prefWidth="114.0" styleClass="button" stylesheets="@anchorPaneBackground.css" text="Add gift " textFill="#fcfff1" />
+   </children>
+   <stylesheets>
+      <URL value="@anchorPaneBackground.css" />
+      <URL value="@CssSheet_weddingApp.css" />
+   </stylesheets>
+</AnchorPane>
